@@ -5,10 +5,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Bing</title>
-   <link rel="stylesheet" href="style.css">
 
+   <title>Bing</title>
+
+   <link rel="icon" type="image/png" href="./images/bing.jpeg" />
+   <link rel="stylesheet" href="style.css">
+   
    <script src="https://kit.fontawesome.com/f3ff85d211.js" crossorigin="anonymous"></script>
+   
 </head>
 
 <body>
@@ -18,86 +22,128 @@
       <p>Rewards</p>
       <img src="./images/reward.png" alt="Reward" class="reward">
 
-      <input id="menu-toggle" type="checkbox" />
-      <label class='container' for="menu-toggle">
-      <div class='menu-button'></div>
+      <!-- open -->
+      <div class="hamburger">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+     </div>
 
-         <div class="menu">
-            <ul class="top-menu">
-               <li>
-                  <img src="./images/collections-bookmark.svg" alt="">
-                  Collections
-               </li>
-               <li>
+     <!-- close -->
+     <div class="hamburger-close">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+
+
+
+      <div id="menu" style="display: none;">
+         <ul class="top-menu">
+            <li>
+               <img src="./images/collections-bookmark.svg" alt="">
+               Collections
+            </li>
+            <li>
+               <div style="display: flex; gap: 20px;">
                   <img src="./images/settings.svg" alt="">
                   <details class="settings">
-                     <summary>Settings</summary>
+                     <summary id="set-summary">
+                        Settings
+                        <div></div>
+                     </summary>
                      <p>Language</p>
                      <p>Country/Region</p>
                      <p>Location</p>
                      <p>Voice Search</p>
                      <p>More</p>
                   </details>
-               </li>
-               <li>
-                  <img src="./images/lock.svg" alt="">
-                  SafeSearch <span style="margin-left: 70px;">Moderate</span>
-               </li>
-               <li>
-                  <img src="./images/lab.svg" alt="">
-                  <details>
-                     <summary value="">Labs</summary>
-                     <p>Chat response on result page</p>
-                     <p>Choose how often do you want to see chat responses on the search result page.</p>
-                     <div class="radio">
-                        <div>
-                           <input type="radio" checked> Auto (Default)
-                        </div>
-                        <div>
-                           <input type="radio"> More frequent
-                        </div>
-                        <div>
-                           <input type="radio"> Off
-                        </div>
 
+               </div>
+            </li>
+            <li>
+               <img src="./images/lock.svg" alt="">
+               SafeSearch <span style="margin-left: 70px;">Moderate</span>
+            </li>
+            <li>
+               <img src="./images/lab.svg" alt="">
+               <details>
+                  <summary class="lab-summary">
+                     Labs
+                     <div></div>
+                  </summary>
+                  <p>Chat response on result page</p>
+                  <p>Choose how often do you want to see chat responses on the search result page.</p>
+                  <div class="radio">
+                     <div>
+                        <input type="radio" checked> Auto (Default)
                      </div>
-                  </details>
-               </li>
-               <li>
-                  <img src="./images/history.svg" alt="">
-                  Search history
-               </li>
-               <li>
-                  <img src="./images/shield.svg" alt="">
-                  Privacy
-               </li>
-               <li>
-                  <img src="./images/feedback.svg" alt="">
-                  Feedback
-               </li>
-               <li>
-                  <img src="./images/home.svg" alt="">
-                  <details class="settings">
-                     <summary>
-                        Customize your homepage
-                     </summary>
-                     <p>Show menu bar</p>
-                     <p>Show news and interests</p>
-                     <p>Show homepage image</p>
-                  </details>
-               </li>
-            </ul>
-            <hr>
-            <ul class="bottom-menu">
-               Privacy and Cookies •
-               Legal •
-               Advertise •<br>
-               About our ads •
-               Help
-            </ul>
-            <p style="text-align: left; padding-left: 15px;">© 2023 Microsoft</p>
+                     <div>
+                        <input type="radio"> More frequent
+                     </div>
+                     <div>
+                        <input type="radio"> Off
+                     </div>
 
-         </div>
+                  </div>
+               </details>
+            </li>
+            <li>
+               <img src="./images/history.svg" alt="">
+               Search history
+            </li>
+            <li>
+               <img src="./images/shield.svg" alt="">
+               Privacy
+            </li>
+            <li>
+               <img src="./images/feedback.svg" alt="">
+               Feedback
+            </li>
+            <li>
+               <img src="./images/home.svg" alt="">
+               <details class="settings">
+                  <summary class="home-summary">
+                     Customize your homepage
+                     <div></div>
+                  </summary>
+                  <p>
+                     Show menu bar
+                     <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                     </label>
+                  </p>
+                  <p>
+                     Show news and interests
+                     <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                     </label>
+
+                  </p>
+                  <p>
+                     Show homepage image
+                     <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                     </label>
+                  </p>
+               </details>
+            </li>
+         </ul>
+         <hr>
+         <ul class="bottom-menu">
+            Privacy and Cookies •
+            Legal •
+            Advertise •<br>
+            About our ads •
+            Help
+         </ul>
+         <p style="text-align: left; padding-left: 15px;">© 2023 Microsoft</p>
+
+         
+      </div>
 
 
 
@@ -111,9 +157,6 @@
       </div> -->
       <input type="search">
    </div>
-
-</body>
-
 
 <footer>
    <ul>
@@ -132,12 +175,9 @@
             href="https://iconscout.com">IconScout</a></li>
 
    </ul>
-
-
-
-
-
 </footer>
+</body>
 
+<script src="script.js"></script>
 
 </html>
