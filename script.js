@@ -3,7 +3,7 @@ const menu = document.getElementById("menu");
 
 const hamburgerClose = document.querySelector(".hamburger-close");
 const toggleHamburger = () => {
-   menu.classList.add('.menu-animation-slideDown');
+   menu.classList.add('menu-animation-slideDown');
 
   menu.style.display = 'block';
   hamburgerClose.style.display = 'block';
